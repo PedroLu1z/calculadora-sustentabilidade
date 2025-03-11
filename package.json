@@ -1,0 +1,25 @@
+{
+  "name": "calculadora-sustentabilidade",
+  "version": "1.0.0",
+  "description": "Um site onde os usuários podem inserir dados sobre seu estilo de vida (consumo de energia, transporte, alimentação, etc.) e descobrir sua pegada ecológica. O site pode fornecer dicas personalizadas para reduzir o impacto ambiental.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroLu1z/calculadora-sustentabilidade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroLu1z/calculadora-sustentabilidade/issues"
+  },
+  "homepage": "https://github.com/PedroLu1z/calculadora-sustentabilidade#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "firebase-admin": "^13.2.0",
+    "mssql": "^11.0.1"
+  }
+}

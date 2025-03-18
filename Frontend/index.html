@@ -103,31 +103,32 @@
         <section id="calculadoraEcologica">
             <div class="container">
                 <h2 class="text-center mt-3">Calculadora de Pegada <span style="color: #A5D6A7;">Ecológica</span></h2>
-                <form>
+                <form id="formCalculadora">
                     <div class="mb-3">
-                        <label for="" class="form-label">Quantidade total de Energia Consumida</label>
-                        <input type="email" class="form-control" id="inputEnergia">
+                        <label for="inputEnergia" class="form-label">Quantidade total de Energia Consumida (kWh)</label>
+                        <input type="number" class="form-control" id="inputEnergia" required>
                         <div class="form-text">Essa quantidade é a por mês</div>
                     </div>
                     <div class="mb-3">
-                        <label for="" class="form-label">Quantidade total de Alimentos</label>
-                        <input type="password" class="form-control" id="inputAlimentos">
+                        <label for="inputAlimentos" class="form-label">Quantidade total de Alimentos (kg)</label>
+                        <input type="number" class="form-control" id="inputAlimentos" required>
                         <div class="form-text">Essa quantidade é a por mês</div>
                     </div>
                     <div class="mb-3">
-                        <label for="" class="form-label">Quantidade total de Combustivel gasto</label>
-                        <input type="text" class="form-control" id="inputCombustivel">
+                        <label for="inputCombustivel" class="form-label">Quantidade total de Combustível gasto (litros)</label>
+                        <input type="number" class="form-control" id="inputCombustivel" required>
                         <div class="form-text">Essa quantidade é a por mês</div>
                     </div>
-                    <button class="btn">
-                        <a href="">Calcular Pegada Ecológica</a>
-                    </button>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success w-100 mb-3">Calcular Pegada Ecológica</button>
+                    </div>
                 </form>
+                <div id="resultado" class="mt-4"></div>
             </div>
         </section>
 
         <footer class="bg-custom text-white text-center py-1">
-            <div class="card-footer text-body-secondary text-center" >
+            <div class="card-footer text-body-secondary text-center">
                 <p style="color: #fff;">&copy; Site criado por <a style="text-decoration: none; color: #fff;"
                         href="https://www.github.com/pedrolu1z">Pedro Lu1z</a> e todos os direitos
                     reservados;
